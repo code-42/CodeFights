@@ -34,3 +34,6 @@ The element in a that occurs in the array more than once and has the minimal ind
         console.log("This prints to the console when you Run Tests");
         return "Hello, " + name;
     }
+
+# My Solution
+![Find the first duplicate number in an array](My First CodeFight Challenge.png "Find the first duplicate number in an array")
