@@ -36,4 +36,4 @@ The element in a that occurs in the array more than once and has the minimal ind
     }
 
 # My Solution
-![Find the first duplicate number in an array](My_First_CodeFight_Challenge.png "Find the first duplicate number in an array")
+![Find the first duplicate number in an array](My_First_CodeFight_Challenge_Solved.png "Find the first duplicate number in an array")
