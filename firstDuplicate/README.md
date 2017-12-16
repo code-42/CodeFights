@@ -2,6 +2,8 @@
 
 ## https://codefights.com/interview-practice/task/pMvymcahZ8dY4g75q
 
+![Find the first duplicate number in an array](My_First_CodeFight_Challenge_Solved.png "Find the first duplicate number in an array")
+
 #### Note: Write a solution with O(n) time complexity and O(1) additional space complexity, since this is what you would be asked to do during a real interview.
 
 Given an array a that contains only numbers in the range from 1 to a.length, find the first duplicate number for which the second occurrence has the minimal index. In other words, if there are more than 1 duplicated numbers, return the number for which the second occurrence has a smaller index than the second occurrence of the other number does. If there are no such elements, return -1.
@@ -35,5 +37,3 @@ The element in a that occurs in the array more than once and has the minimal ind
         return "Hello, " + name;
     }
 
-# My Solution
-![Find the first duplicate number in an array](My_First_CodeFight_Challenge_Solved.png "Find the first duplicate number in an array")
