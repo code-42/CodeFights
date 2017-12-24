@@ -8,6 +8,7 @@ public class Main {
 
         System.out.println("CodeFights.com RotateImage Challenge");
 
+        rotateImage(arr);
     }
 
     // CodeFights challenge rotateImage
@@ -29,5 +30,21 @@ public class Main {
              [9,6,3]]
     */
 
+    public static String rotateImage(int[][] arr) {
+
+        int aLength = arr.length;
+        System.out.println(aLength);
+
+        int r = 0;
+        int c = 0;
+        for(c = aLength - 1; c >= 0; c--){
+            for(r = 0; r < aLength; r++){
+                System.out.println(r + " " + c);
+            }
+            System.out.println(r + " " + c);
+        }
+
+        return("\n" + arr[0] + "\n" + arr[1] + "\n" + arr[2] + "\n" + arr[3]);
+    }
 
 }
