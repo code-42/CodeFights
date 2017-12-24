@@ -1,4 +1,4 @@
-# CodeFights.com interview challenge RotateImage
+# CodeFights.com interview challenge rotateImage
 ## https://codefights.com/interview-practice/task/5A8jwLGcEpTPyyjTB
 
 #### Note: Try to solve this task in-place (with O(1) additional memory), since this is what you'll be asked to do during an interview.
