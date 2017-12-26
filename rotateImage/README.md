@@ -1,6 +1,8 @@
 # CodeFights.com interview challenge RotateImage
 ## https://codefights.com/interview-practice/task/5A8jwLGcEpTPyyjTB
 
+![CodeFights.com Challenge Solved! Announcement](CodeFight_Challenge_Solved.png "CodeFights.com Challenge Solved! Announcement")
+
 #### Note: Try to solve this task in-place (with O(1) additional memory), since this is what you'll be asked to do during an interview.
 
 You are given an n x n 2D matrix that represents an image. Rotate the image by 90 degrees (clockwise).
