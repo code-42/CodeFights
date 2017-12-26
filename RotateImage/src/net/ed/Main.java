@@ -31,32 +31,29 @@ public class Main {
         rotateImage(arr);
     }
 
-    public static void rotateImage(int[][] arr) {
-        int aLength = arr.length;
-
-        // print the array passed in
-        System.out.println("original array elements");
-        for (int r = 0; r < aLength; r++) {
-            for (int c = 0; c < aLength; c++) {
-                System.out.print(arr[r][c] + " ");
-            }
-            System.out.println();
-        }
+    public static void rotateImage(int[][] arr1) {
+        int aLength = arr1.length;
 
         int[][] arr2 = new int[aLength][aLength];
 
         int r = 0;
         int c = 0;
-        int r2 = 0;
-        int c2 = 0;
 
+        // print the array passed in
+        System.out.println("original array elements");
+        for (r = 0; r < aLength; r++) {
+            for (c = 0; c < aLength; c++) {
+                System.out.print(arr1[r][c] + " ");
+            }
+            System.out.println();
+        }
         System.out.println();
 
         // print the grid [r][c] before rotating
         System.out.println("print grid before rotating");
         for (r = 0; r < aLength; r++) {
             for (c = 0; c < aLength; c++) {
-                System.out.print("[" + r + "][" + c + "]");
+                System.out.print("[" + r + "][" + c + "] " + arr1[r][c]);
                 if (c < aLength - 1)
                     System.out.print(" ");
             }
@@ -66,53 +63,29 @@ public class Main {
 
         ////////////////////////////////////////
 
-        System.out.println("flip it vertically");
-        for (r = aLength - 1; r >= 0; r--) {
-            for (c = 0; c < aLength; c++) {
-
-                arr2[c][r] = arr[r][c];
-
-                System.out.print("[" + r + "][" + c + "]");
-                if (c < aLength)
-                    System.out.print(" ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-
-        ////////////////////////////////////////
-
-        System.out.println("flip it horizontally");
-        for (r = aLength - 1; r >= 0; r--) {
-            for (c = aLength - 1; c >= 0; c--) {
-                arr2[c][r] = arr2[r][c];
-                System.out.print("[" + r + "][" + c + "]");
-                if (c < aLength)
-                    System.out.print(" ");
-            }
-            System.out.println();
-        }
-        System.out.println();
-
-        ////////////////////////////////////////
-
-        System.out.println("flip it vertically again");
+        System.out.println("switch row and column with looping");
         for (r = 0; r < aLength; r++) {
-            for (c = aLength - 1; c >= 0; c--) {
-//                for (c = 0; c < aLength; c++) {
+            for (c = 0; c < aLength; c++) {
+                // subtract row loop from aLength and put in col index
+                System.out.print("74. " + (aLength - (r + 1)) + " ");
+                arr2[c][aLength - (r + 1)] = arr1[r][c];
+                System.out.println(arr2[c][r]);
+            }
+        }
 
-                    arr2[r][c] = arr2[c][r];
-
-                    System.out.print("[" + r + "][" + c + "]");
-                    if (c < aLength)
-                        System.out.print(" ");
-//                }
-//                System.out.println();
+        System.out.println();
+        System.out.println("print grid after rotating");
+        for (r = 0; r < aLength; r++) {
+            for (c = 0; c < aLength; c++) {
+                System.out.print("[" + r + "][" + c + "] " + arr2[r][c]);
+                if (c < aLength - 1)
+                    System.out.print(" ");
             }
             System.out.println();
         }
+        System.out.println();
 
-        System.out.println("print rotated array elements");
+        System.out.println("print elements");
         for (r = 0; r < aLength; r++) {
             for (c = 0; c < aLength; c++) {
                 System.out.print(arr2[r][c] + " ");
@@ -120,6 +93,7 @@ public class Main {
             System.out.println();
         }
         System.out.println();
+
 
     }
 }
