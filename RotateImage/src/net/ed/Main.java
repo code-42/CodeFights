@@ -67,9 +67,8 @@ public class Main {
         for (r = 0; r < aLength; r++) {
             for (c = 0; c < aLength; c++) {
                 // subtract row loop from aLength and put in col index
-                System.out.print("74. " + (aLength - (r + 1)) + " ");
+//                System.out.print("74. " + (aLength - (r + 1)) + " ");
                 arr2[c][aLength - (r + 1)] = arr1[r][c];
-                System.out.println(arr2[c][r]);
             }
         }
 
